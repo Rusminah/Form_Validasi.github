@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="pavicon.jpg">
+    <title>Pendaftaran Mahasiswa UNIPI</title>
+</head>
+<body>
+    <h2>From Pendaftaran Mahasiswa UNIPI 2024</h2>
+    <form method="post" action="" onsubmit="validasi()">
+        <table width="600">
+            <tr>
+                <td>Nama</td>
+                <td><input type="text" name="Nama" id="Nama"></td>
+            </tr>
+            <tr>
+                <td>Nama Lengkap</td>
+                <td><input type="text" name="Nama_Lengkap" id="Nama_Lengkap"></td>
+            </tr>
+            <tr>
+                <td>No Pendaftaran</td>
+                <td><input type="number" name="No_Pendaftaran" id="No_Pendaftaran"></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td><input type="date" name="Tanggal_Lahir" id="Tanggal_Lahir"></td>
+            </tr>
+            <tr>
+                <td>Tempat Lahir</td>
+                <td><input type="text" name="Tempat_Lahir" id="Tempat_Lahir"></td>
+            </tr>
+            <tr>
+                <td>Agama</td>
+                <td>
+                    <select name="Agama">
+                        <option value=Islam> Islam </option>
+                        <option value=Kristen> Kristen </option>
+                        <option value=Konghuchu> Konghuchu </option>
+                        <option value=Budha> Budha </option>
+                        </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Alamat Lengkap</td>
+                <td><textarea></textarea></td>
+            </tr>
+            <tr>
+                <td>No KTP</td>
+                <td><input type="text" name="ktp" id="ktp"></td>
+            </tr>
+            <tr>
+                <td>No KK</td>
+                <td><input type="text" name="no_kk" id="no_kk"></td>
+            </tr>
+            <tr>
+                <td>Usia</td>
+                <td><input type="text" name="Usia" id="Usia"></td>
+            </tr>
+            <tr>
+                <td>Referensi</td>
+                <td>
+                    <input type="radio" value="Referensi" name="option"> Referensi
+                    <input type="radio" value="non Referensi" name="option"> Non Referensi
+                </td>
+            </tr>
+            <tr>
+                <td>No Handphone</td>
+                <td><input type="text" name="No_Handphone" id="No_Handphone"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="Email" id="Email"></td>
+            </tr>
+            <tr>
+                <td>Fakultas</td>
+                <td>
+                <select name="Fakultas">
+                <option value="Pilih Disini"> Pilih Disini</option>
+                <option value=Fakultas Bisnis> Fakultas Bisnis</option>
+                <option value=Fakultas Ilmu Komputer> Fakultas Ilmu Komputer</option>
+                <option value=Fakultas Managemen> Fakultas Managemen</option>
+                <option value=Fakultas Sistem Informasi> Fakultas Sistem Informasi</option>
+                </select>
+            </td>
+        </tr>
+            <td></td>
+            <tr>
+                <td></td>
+                <td>
+                    <input name="Submit" type="submit" value="Submit">
+                    <input name="btnBatal" type="reset" value="Batal">
+                    <input name="Ulang" type="reset" value="Ulang">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <hr>
+    &copy; Pendaftaran UNIPI
+</body>
+<script type="text/javascript">
+    function validasi() {
+         var nama = document.getElementById("nama").value;   
+         var Nama_Lengkap = document.getElementById("nama_lengkap").value; 
+         var no_pendaftaran = document.getElementById("no_pendaftaran").value; 
+         var Tempat_Lahir = document.getElementById("Tempat_Lahir").value;
+         var no_ktp = document.getElementById("no_ktp").value;   
+         var no_kk = document.getElementById("no_kk").value; 
+         var Usia = document.getElementById("Usia").value; 
+         var Referensi = document.getElementById("Referensi").value; 
+         var No_Handphone = document.getElementById("No_Handphone").value;
+         var Email = document.getElementById("Email").value;
+        if (nama != "" && ktp!="" && no_kk!="" && usia!="" &&) {
+        return true;
+    }else{
+        alert('Data harus diisi secara lengkap !');
+    }
+    }
+</script>
+<style>
+    body {
+        background-color: rgb(193, 214, 207);
+        background-size: cover;
+        background-clip: inherit;
+    }
+</style>
+</html>
